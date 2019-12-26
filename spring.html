@@ -12,6 +12,9 @@
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<script src="js/modernizr.custom.70736.js"></script>
 		<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
+        <script src="js/googleTagManager.js"></script>
+        <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+        <script type="text/javascript" src="js/vkOopenAPI.js"></script>
 		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
     </head>
     <body>
@@ -29,7 +32,7 @@
 				<header class="clearfix">
 				
 					<h1>Весна</h1>
-                    <p>Весна в Ханты-Мансийске такая же как и... Впрочем, смотрите сами.</p>
+                    <p>Весна в Ханты-Мансийске такая же как и... Впрочем, судите сами.</p>
 
 					<div class="support-note">
 						<span class="note-ie">Sorry, only modern browsers.</span>
@@ -40,22 +43,36 @@
 				<div class="gamma-container gamma-loading" id="gamma-container">
 
 					<ul class="gamma-gallery">
-
-						<li>
-							<div data-alt="img03" data-description="<h3>Март</h3>" data-max-width="1800" data-max-height="1350">
-								<div data-src="images/xxxlarge/spring-1.jpg" data-min-width="1300"></div>
-								<div data-src="images/xxlarge/spring-1.jpg" data-min-width="1000"></div>
-								<div data-src="images/xlarge/spring-1.jpg" data-min-width="700"></div>
-								<div data-src="images/large/spring-1.jpg" data-min-width="300"></div>
-								<div data-src="images/medium/spring-1.jpg" data-min-width="200"></div>
-								<div data-src="images/small/spring-1.jpg" data-min-width="140"></div>
-								<div data-src="images/xsmall/spring-1.jpg"></div>
-								<noscript>
-									<img src="images/xsmall/spring-1.jpg" alt="img03"/>
-								</noscript>
-							</div>
-						</li>
+                        <li>
+                            <div data-alt="img03" data-description="<h3>По делам</h3>" data-max-width="1800" data-max-height="1350">
+                                <div data-src="images/xxxlarge/spring-4.jpg" data-min-width="1300"></div>
+                                <div data-src="images/xxlarge/spring-4.jpg" data-min-width="1000"></div>
+                                <div data-src="images/xlarge/spring-4.jpg" data-min-width="700"></div>
+                                <div data-src="images/large/spring-4.jpg" data-min-width="300"></div>
+                                <div data-src="images/medium/spring-4.jpg" data-min-width="200"></div>
+                                <div data-src="images/small/spring-4.jpg" data-min-width="140"></div>
+                                <div data-src="images/xsmall/spring-4.jpg"></div>
+                                <noscript>
+                                    <img src="images/xsmall/spring-4.jpg" alt="img03"/>
+                                </noscript>
+                            </div>
+                        </li>
+		
 					   <!--<li>
+                            <div data-alt="img03" data-description="<h3>Март</h3>" data-max-width="1800" data-max-height="1350">
+                                <div data-src="images/xxxlarge/spring-1.jpg" data-min-width="1300"></div>
+                                <div data-src="images/xxlarge/spring-1.jpg" data-min-width="1000"></div>
+                                <div data-src="images/xlarge/spring-1.jpg" data-min-width="700"></div>
+                                <div data-src="images/large/spring-1.jpg" data-min-width="300"></div>
+                                <div data-src="images/medium/spring-1.jpg" data-min-width="200"></div>
+                                <div data-src="images/small/spring-1.jpg" data-min-width="140"></div>
+                                <div data-src="images/xsmall/spring-1.jpg"></div>
+                                <noscript>
+                                    <img src="images/xsmall/spring-1.jpg" alt="img03"/>
+                                </noscript>
+                            </div>
+                        </li>
+                        <li>
 							<div data-alt="img03" data-description="<h3>ул. Собянина</h3>" data-max-width="1800" data-max-height="1350">
 								<div data-src="images/xxxlarge/spring-2.jpg" data-min-width="1300"></div>
 								<div data-src="images/xxlarge/spring-2.jpg" data-min-width="1000"></div>
@@ -83,20 +100,7 @@
 								</noscript>
 							</div>
 						</li>
-					   <!--<li>
-							<div data-alt="img03" data-description="<h3>По делам</h3>" data-max-width="1800" data-max-height="1350">
-								<div data-src="images/xxxlarge/spring-4.jpg" data-min-width="1300"></div>
-								<div data-src="images/xxlarge/spring-4.jpg" data-min-width="1000"></div>
-								<div data-src="images/xlarge/spring-4.jpg" data-min-width="700"></div>
-								<div data-src="images/large/spring-4.jpg" data-min-width="300"></div>
-								<div data-src="images/medium/spring-4.jpg" data-min-width="200"></div>
-								<div data-src="images/small/spring-4.jpg" data-min-width="140"></div>
-								<div data-src="images/xsmall/spring-4.jpg"></div>
-								<noscript>
-									<img src="images/xsmall/spring-4.jpg" alt="img03"/>
-								</noscript>
-							</div>
-						</li>
+					   <!--
 						<li>
 							<div data-alt="img03" data-description="<h3>Звездить всегда</h3>" data-max-width="1800" data-max-height="1350">
 								<div data-src="images/xxxlarge/spring-5.jpg" data-min-width="1300"></div>
@@ -167,25 +171,27 @@
 								</noscript>
 							</div>
 						</li>
-					   <!--<li>
-							<div data-alt="img03" data-description="<h3>Графф и Ти</h3>" data-max-width="1800" data-max-height="1350">
-								<div data-src="images/xxxlarge/spring-10.jpg" data-min-width="1300"></div>
-								<div data-src="images/xxlarge/spring-10.jpg" data-min-width="1000"></div>
-								<div data-src="images/xlarge/spring-10.jpg" data-min-width="700"></div>
-								<div data-src="images/large/spring-10.jpg" data-min-width="300"></div>
-								<div data-src="images/medium/spring-10.jpg" data-min-width="200"></div>
-								<div data-src="images/small/spring-10.jpg" data-min-width="140"></div>
-								<div data-src="images/xsmall/spring-10.jpg"></div>
-								<noscript>
-									<img src="images/xsmall/spring-10.jpg" alt="img03"/>
-								</noscript>
-							</div>
-                        </li>-->
+                        <li>
+                            <div data-alt="img03" data-description="<h3>Графф и Ти</h3>" data-max-width="1800" data-max-height="1350">
+                                <div data-src="images/xxxlarge/spring-10.jpg" data-min-width="1300"></div>
+                                <div data-src="images/xxlarge/spring-10.jpg" data-min-width="1000"></div>
+                                <div data-src="images/xlarge/spring-10.jpg" data-min-width="700"></div>
+                                <div data-src="images/large/spring-10.jpg" data-min-width="300"></div>
+                                <div data-src="images/medium/spring-10.jpg" data-min-width="200"></div>
+                                <div data-src="images/small/spring-10.jpg" data-min-width="140"></div>
+                                <div data-src="images/xsmall/spring-10.jpg"></div>
+                                <noscript>
+                                    <img src="images/xsmall/spring-10.jpg" alt="img03"/>
+                                </noscript>
+                            </div>
+                        </li>
 					</ul>
 
 					<div class="gamma-overlay"></div>
 
 				</div>
+
+                <div class="vk-comments" id="vk_comments"></div>
 
 			</div><!--/main-->
 		</div>
@@ -250,6 +256,7 @@
 
 			});
 
-		</script>	
+		</script>
+        <script type="text/javascript" src="js/vkComments.js"></script>
 	</body>
 </html>
