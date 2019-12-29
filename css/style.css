@@ -198,6 +198,7 @@
 
 .portfolio__work {
     list-style-type: none;
+    margin-bottom: 2.5rem;
 }
 
 .portfolio__work li {
@@ -730,7 +731,7 @@ button.gamma-btn-sspause:before {
     }
 
     .footer-content {
-    margin-top: 8rem;
+    margin-top: 3rem;
     }
 }
 
