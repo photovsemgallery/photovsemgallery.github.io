@@ -198,7 +198,7 @@
 
 .portfolio__work {
     list-style-type: none;
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
 }
 
 .portfolio__work li {
@@ -349,6 +349,16 @@
     outline: none;
     text-decoration: none;
 }
+
+.main .quote {
+    margin-left: auto;
+    font-size: 1.8rem;
+}
+
+.quote p {
+    text-align: right;
+    font-size: 1.8rem;
+} 
 
 .vk-comments {
     margin-top: 50px;
@@ -723,6 +733,14 @@ button.gamma-btn-sspause:before {
     .footer-content {
     margin-top: 2rem;
     }
+    
+    .main .quote {
+    font-size: 0.8rem;
+    }
+
+    .quote p {
+        font-size: 0.8rem;
+    }
 }
 
 @media (min-width: 992px) {
@@ -733,6 +751,7 @@ button.gamma-btn-sspause:before {
     .footer-content {
     margin-top: 3rem;
     }
+
 }
 
 @media (min-width: 1200px) {
