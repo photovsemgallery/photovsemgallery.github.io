@@ -8,7 +8,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Галерея ФотоВСем - Фотограф Владимир Семёнов">
     <meta property="og:image" content="">
-    <meta property="og:description" content="Ханты-Мансийск ВКартинках.">
+    <meta property="og:description" content="Владимир Семёнов: фотограф, фотографии">
     <meta property="og:site_name" content="Галерея ФотоВСем - Фотограф Владимир Семёнов">
     <meta property="article:author" content="Владимир Семёнов">
     <title>Галерея ФотоВСем - Фотограф Владимир Семёнов</title>
@@ -22,49 +22,52 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-        <header id="top"></header>
-        <main class="main portfolio" id="myportfolio">
-        <h1 class="firstscreen-content__title">Галерея ФотоВСем</h1>
-        <h2 class="firstscreen-content__autorname">Фотограф Владимир Семёнов</h2>
+    <!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZ3Z97G"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+    <header class="firstscreen" id="main-scroll">
+      <div class="wrapper">
+        <div class="firstscreen-content">
+        <h1 class="firstscreen-content__title">ФотоВСем</h1>
+        <p class="firstscreen-content__autorname">Фотограф Владимир Семёнов</p>
+      </div>
+      </div>
+      <a class="firstscreen-content__link" href="#myportfolio"></a>
+    </header>
+    <main class="portfolio" id="myportfolio">
+      <div class="container">
+        <h2 class="portfolio__title">Галерея</h2>
         <ul class="portfolio__list row">
-            <li class="portfolio__work col-6">
-                <img src="images/medium/eternalWanderer-1.jpg" width="300" height="225" alt="Работа №1">
-                <a href="eternalWanderer.html">Вечный странник</a>
-            </li>
-            <li class="portfolio__work col-6">
-                <img src="images/medium/reminders-1.jpg" width="300" height="225" alt="Работа №1">
-                <a href="reminders.html">Памятки</a>
-            </li>
-            <li class="portfolio__work col-4">
-                <img src="images/medium/vladimir-1.jpg" width="300" height="200" alt="Работа №1">
-                <a href="vladimir.html">Владимир ... и мир</a>
-            </li>
-            <li class="portfolio__work col-4">
-                <img src="images/medium/dreamsInReality-1.jpg" width="300" height="200" alt="Работа №2">
-                <a href="dreamsInReality.html">Мечты в реальности</a>
-            </li>
-            <li class="portfolio__work col-4">
-                <img src="images/medium/spring-1.jpg" width="300" height="200" alt="Вид на стеллу покорителям Югры в Самарово">
-                <a href="spring.html">Весна</a>
-            </li>
-            <li class="portfolio__work col-12">
-                <img src="images/medium/tentCapital-1.jpg" width="300" height="200" alt="Вид на стеллу покорителям Югры в Самарово">
-                <a href="tentCapital.html">Чумовая столица</a>
-            </li>
+          <li class="portfolio__work col-4">
+            <img src="images/portfolio/pamyatki.jpg" width="360" height="240" alt="Работа №1">
+            <a href="reminders.html">Памятки</a>
+          </li>
+          <li class="portfolio__work col-4">
+            <img src="images/portfolio/hm.jpg" width="360" height="240" alt="Работа №2">
+            <a href="hm.html">Ханты-Мансийск. Мечты в реальности</a>
+          </li>
+          <li class="portfolio__work col-4">
+            <img src="images/portfolio/vansevat.jpg" width="360" height="240" alt="Работа №3">
+            <a href="vansevat.html">Ванзеват после «Победы»</a>
+          </li>
         </ul>
+      </div>
     </main>
     <footer class="footer-content">
       <div class="container row">
           <div class="footer-content__aboutme col-3">
+            <p class="profession"><strong>Галерея ФотоВСем</strong></p>
             <p class="autor">Владимир Семёнов</p>
-            <a class="profession" href="#top">Галерея ФотоВСем</a>
+            <p class="town">Ханты-Мансийск</p>
           </div>
           <div class="footer-content__social col-6">
-            <p class="message">Мессенджеры</p>
+            <p class="message"><strong>Мессенджеры</strong></p>
             <ul>
               <li>
-                <a class="social-button social-button-vk" href="https://vk.com/galleryphotovsem">ВКонтакте</a>
+                <a class="social-button social-button-vk" href="https://vk.me/semyonovladimir">ВКонтакте</a>
               </li>
               <li>
                 <a class="social-button social-button-skype" href="skype:photovsem86?call">Скайп</a>
@@ -75,14 +78,22 @@
             </ul>
           </div>
           <div class="footer-content__contacts col-3">
-            <p>photovsem.hm@yandex.ru</p>
+            <p class="phone"><strong>Почта</strong></p>
             <a class="offer-button" href="mailto:photovsem.hm@yandex.ru">написать</a>
-          </div> 
+          </div>
+
       </div>
-    </footer>   
-    </div>
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZ3Z97G" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#main-scroll").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 800);
+      });
+    });
   </body>
 </html>
