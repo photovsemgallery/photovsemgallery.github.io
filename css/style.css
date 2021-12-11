@@ -1,18 +1,15 @@
 @import url('demo.css');
+@font-face{font-family:"OpenSans-Bold";src:url("../fonts/OpenSans-Bold.ttf") format("truetype");font-weight:bold;font-style:normal;}
+@font-face{font-family:"OpenSans-Light";src:url("../fonts/OpenSans-Light.ttf") format("truetype");font-weight:100;font-style:normal;}
+@font-face{font-family:"OpenSans-Regular";src:url("../fonts/OpenSans-Regular.ttf") format("truetype");font-weight:100;font-style:normal;}
+@font-face{font-family:"fontello";src:url("../fonts/fontello.ttf") format('truetype');font-weight: normal;font-style: normal;}
+[class^="icon-"]:before, [class*=" icon-"]:before {font-family: "fontello";font-style: normal;font-weight: normal;speak: none;display: inline-block;text-decoration: inherit;width: 1em;margin-right: .2em;text-align: center;font-variant: normal;text-transform: none;line-height: 1em;margin-left: .2em;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+.icon-down:before{content:'\e800'; }
+.icon-twitter:before{content:'\f099';}
+.icon-facebook:before{content: '\f09a';}
+.icon-vk:before{content:'\f189';}
 
 /* Entypo Icon Font */
-@font-face {
-  font-family: 'entypo-selected';
-  src: url("../font/entypo-selected.eot");
-  src: 
-	  url("../font/entypo-selected.eot?#iefix") format('embedded-opentype'), 
-	  url("../font/entypo-selected.woff") format('woff'), 
-	  url("../font/entypo-selected.ttf") format('truetype'), 
-	  url("../font/entypo-selected.svg#entypo-selected") format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: fallback;
-}
 
 :root {
     container-lg-width: 1170px;
@@ -95,15 +92,28 @@
 
 /* Gamma Gallery Style */
 
+body {
+    font-family:"OpenSans-Regular", "Helvetica", sans-serif;
+    font-size:2.4rem;
+}
+
 .firstscreen {
-    background: #9bc3ca url(../images/title-1.jpg) center center no-repeat;
-    background-attachment: fixed;
-    color: #ffffff;
-    display: table;
-    height: 100vh;
-    position: relative;
-    text-align: center;
-    width: 100%;
+    position:relative;
+    display:table;
+    width:100%;
+    text-align:center;
+    color:#ffffff;
+    height:100vh;
+    background:#9bc3ca url(../images/photo_1.jpg) center center no-repeat;
+    background-attachment:fixed;
+}
+
+.firstscreen::before {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.5);
 }
 
 .wrapper {
@@ -111,13 +121,7 @@
     vertical-align: middle;
 }
 
-.firstscreen::before {
-    background-color: rgba(0, 0, 0, 0.8);
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
+
 
 .firstscreen-content {
     margin-left: auto;
@@ -127,27 +131,28 @@
 }
 
 .firstscreen-content__title {
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 1.5;
-    margin: 0;
-    margin-bottom: 1rem;
+    margin:0;
+    margin-bottom:1rem;
+    font-size:3rem;
+    line-height:1.5;
+    font-weight:300;
+    text-transform:uppercase;
 }
 
-.main .firstscreen-content__autorname {
-    font-size: 1rem;
-    position: relative;
+.firstscreen-content__autorname {
+    position:relative;
     margin-top: -1rem;
-}
+    font-size:1.2rem;
+    font-weight:300;}
 
 .firstscreen-content__autorname::before {
-    background-color: #888888;
+    background-color: rgb(255 255 255 / 90%);
     content: "";
-    height: 1px;
-    left: 41%;
+    height: 2px;
+    left: 30%;
     position: absolute;
-    top: -0.4rem;
-    width: 18%;
+    top: -0.6rem;
+    width: 40%;
 }
 
 .firstscreen-content__link {
@@ -216,6 +221,7 @@
     display: block;
     font-size: 1.4rem;
     margin: 0 auto;
+    margin-top: 2rem;
     text-decoration: underline;
 }
 
@@ -240,36 +246,33 @@
 
 .autor,
 .message,
-.phone {
+.phone
+.town {
     margin: 0;
 }
 
-.town {
-    font-size: 1.5rem;
-    margin: 0;
-    margin-top: 0.5rem;
+.footer-content__aboutm .town {
+    font-size: 1rem;
+    
 }
 
 .profession {
     margin: 0;
-    margin-top: 3rem;
-    padding: 0.4rem 1rem 0.6rem;
-    font-size: 1.2rem;
     color: #ffffff;
 }
 
 .footer-content__aboutme p,
 .footer-content__social p,
 .footer-content__contacts p {
-	font-size: 0.8rem;
+	font-size: 1.2rem;
 }
 
-.footer-content__aboutme p {
-	margin-bottom: 1rem;
+.footer-content__aboutme .autor {
+    padding-top: 0.9rem;
 }
 
 .footer-content__social ul {
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
 
@@ -319,7 +322,6 @@
 
 .footer-content__contacts p {
     margin: 0;
-    margin-bottom: 1.1rem;
 }
 
 .phone {
@@ -675,23 +677,37 @@ button.gamma-btn-sspause:before {
 	    margin-bottom: 1rem;
 	}
 
-	.main .firstscreen-content__autorname {
-    font-size: 2rem;
-	}
+	.firstscreen-content__autorname {
+        font-size:2rem;
+    }
 
 	.firstscreen-content__autorname::before {
     left: 20%;
     width: 61%;
 	}
 
-	.portfolio__work a {
-    font-size: 3rem;
-	}
+    .portfolio {
+        margin-top: 8rem;
+    }
+
+    .portfolio__title {
+        font-size: 5rem;
+    }
+
+    .portfolio__work a {
+        display: block;
+        font-size: 3rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+        text-decoration: underline;
+    }
 
     .portfolio__work,
     .footer-content__aboutme,
     .footer-content__social,
     .footer-content__contacts {
+        margin-top: 5rem;
         margin-bottom: 3rem;
         width: 100%;
     }
@@ -723,6 +739,11 @@ button.gamma-btn-sspause:before {
         padding-left: 1rem;
     }
 
+    .photobook_html {
+        width:400px;
+        height:250px;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -741,6 +762,11 @@ button.gamma-btn-sspause:before {
     .quote p {
         font-size: 0.8rem;
     }
+
+    .photobook_html {
+        width:700px;
+        height:400px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -752,10 +778,30 @@ button.gamma-btn-sspause:before {
     margin-top: 3rem;
     }
 
+    .photobook_html {
+        width:900px;
+        height:500px;
+    }
+
 }
 
 @media (min-width: 1200px) {
     .container {
         width: var(--container-lg-width);
     }
+
+    .photobook_html {
+        width:900px;
+        height:500px;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.photobook {
+    align-self:
+    center;
 }
