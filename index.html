@@ -8,7 +8,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Галерея ФотоВСем - Фотограф Владимир Семёнов">
     <meta property="og:image" content="">
-    <meta property="og:description" content="Владимир Семёнов: фотограф, фотографии">
+    <meta property="og:description" content="Галерея ФотоВСем - Фотограф Владимир Семёнов">
     <meta property="og:site_name" content="Галерея ФотоВСем - Фотограф Владимир Семёнов">
     <meta property="article:author" content="Владимир Семёнов">
     <title>Галерея ФотоВСем - Фотограф Владимир Семёнов</title>
@@ -86,14 +86,6 @@
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      $("#main-scroll").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 800);
-      });
-    });
+    <script src="js/scroll.js"></script>
   </body>
 </html>
