@@ -361,6 +361,8 @@ html {
 }
 
 .firstscreen-content__photo {
+	padding: 0.3rem;
+    background-color: #fff;
     border-radius: 50%;
 }
 
@@ -369,6 +371,10 @@ html {
     font-size: 3rem;
     font-weight: lighter;
     margin-block: 0;
+}
+
+.firstscreen-content__about {
+	margin-top: 2rem;
 }
 
 .firstscreen-content__link {
@@ -542,12 +548,16 @@ html {
 }
 
 .main-photobook {
-    text-align: center;
+    text-align: center; 
 }
 
 .photobook_html {
     width:400px;
     height:250px;
+	background-color: transparent;
+    border: 0px none transparent;
+    padding: 0px;
+    overflow: hidden;
 }
 
 .vk-comments {
