@@ -4,6 +4,10 @@ Disallow: /js
 Disallow: /img
 Disallow: /images
 Disallow: /font
+Disallow: /README.md
+Disallow: /yandex_8aaf5ea5fe7e75ba.html
+
+
 
 Host: photovsemgallery.github.io
 Sitemap: http://photovsemgallery.github.io/sitemap.xml
