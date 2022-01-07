@@ -546,6 +546,15 @@ html {
 	margin-bottom: 5rem;
 	text-align: left;
 }
+
+.concept-citation {
+	display: block;
+	width: 42%;
+	margin-left: auto;
+	margin-bottom: 3rem;
+	text-indent: -0.75rem;
+}
+
 .main-title {
 	text-align: center;
     margin-bottom: 2rem;
