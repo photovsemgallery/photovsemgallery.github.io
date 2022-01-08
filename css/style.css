@@ -409,7 +409,7 @@ html {
     margin-top: 10rem;
 }
 
-.portfolio__title {
+.main__title {
     text-align: center;
     font-size: 3rem;
     font-weight: lighter;
@@ -459,6 +459,23 @@ html {
 .portfolio__work a:hover {
     background-color:rgba(0, 0, 0, .7);
     color: white;
+}
+
+.exhibitions {
+    margin-top: 10rem;
+	padding: 0 2rem;
+}
+
+.exhibitions__list {
+	margin: 0;
+    margin-top: 3rem;
+    padding: 0;
+	list-style-type: none;
+}
+
+.exhibitions__list li {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .footer-content {
