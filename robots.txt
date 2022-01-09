@@ -6,5 +6,7 @@ Disallow: /404.html
 Disallow: /CNAME
 Disallow: /README.md
 Disallow: /googlea79368478afb31b4.html
+Disallow: /yandex_8aaf5ea5fe7e75ba.html
+Disallow: /yandex_252ae0077b2d2276.html 
 Host: photovsemgallery.ru
 Sitemap: https://photovsemgallery.ru/sitemap.xml
