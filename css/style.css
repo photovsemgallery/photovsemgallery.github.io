@@ -384,6 +384,8 @@ html {
 .firstscreen-content__link {
     position: absolute;
     display: inline-block;
+	font-size: 0;
+	text-align: center;
     margin-left: -25px;
     bottom: 0; 
     width: 50px;
