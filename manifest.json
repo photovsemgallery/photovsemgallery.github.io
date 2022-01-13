@@ -1,0 +1,9 @@
+{
+  "name": "Photographer Vladimir Semyonov",
+  "short_name": "PhotoVSem",
+  "theme_color": "#425356",
+  "background_color": "#f5f5f5",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}
