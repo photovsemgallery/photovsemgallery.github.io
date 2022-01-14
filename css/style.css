@@ -641,7 +641,7 @@ html {
 	box-shadow: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 482px) {
 	.firstscreen {
         background-image: url(../img/firstscreen_bg_1024.webp);
     }
